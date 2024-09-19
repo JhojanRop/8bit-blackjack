@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="index.css">
+  <title>8Bit Blackjack</title>
+</head>
+
+<body>
+  <main>
+    <section class="home hidden">
+      <h1>8Bit Blackjack</h1>
+      <div class="buttons homeButtons">
+        <button class="play">Play</button>
+        <button class="options">Options</button>
+        <button class="howToPlay">How to play</button>
+      </div>
+
+      <p>Made by Steis & Mateo</p>
+    </section>
+
+    <section class="game" id="game">
+      <div class="tableGame">
+        <div class="dealer">
+          <div class="points">
+            <p>Points:</p>
+            <div>
+              <p>21</p>
+            </div>
+          </div>
+
+          <div class="cards">
+            <div class="card"><img src="/assets/cards/BACK.png" alt=""></div>
+            <div class="card"><img src="/assets/cards/A-C.png" alt=""></div>
+          </div>
+
+          <div class="deck">
+            <div class="card"><img src="/assets/cards/BACK.png" alt=""></div>
+            <div class="card"><img src="/assets/cards/BACK.png" alt=""></div>
+            <div class="card"><img src="/assets/cards/BACK.png" alt=""></div>
+            <div class="card"><img src="/assets/cards/BACK.png" alt=""></div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="player">
+          <div class="points">
+            <div class="pointsCount">
+              <p>Points:</p>
+              <div>
+                <p>21</p>
+              </div>
+            </div>
+            <div class="bet">
+              <div>
+                <p>Your bet:</p>
+                <div>
+                  <p class="moneyBet" data-currency="$">21</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards_button">
+            <div class="cards">
+              <div class="card"><img src="/assets/cards/A-H.png" alt=""></div>
+              <div class="card"><img src="/assets/cards/J-C.png" alt=""></div>
+            </div>
+
+            <button class="button hidden">Split</button>
+          </div>
+
+          <div class="options">
+            <div class="actions">
+              <button class="button">Deal</button>
+              <button class="button">Stand</button>
+            </div>
+            <div class="bet">
+              <div class="coin" data-valor="5"><img src="/assets/coins/100.png" alt="coin"></div>
+              <div class="coin" data-valor="5"><img src="/assets/coins/10.png" alt="coin"></div>
+              <div class="coin" data-valor="5"><img src="/assets/coins/25.png" alt="coin"></div>
+              <div class="coin" data-valor="5"><img src="/assets/coins/5.png" alt="coin"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wallet">
+        <div class="balance">
+          <p>Balance: $ <span>5000</span></p>
+        </div>
+        <div class="coinsContainer">
+          <div class="coins">
+            <div class="coin" data-valor="5"><img src="/assets/coins/5.png" alt="coin"></div>
+            <div class="coin" data-valor="10"><img src="/assets/coins/10.png" alt="coin"></div>
+            <div class="coin" data-valor="25"><img src="/assets/coins/25.png" alt="coin"></div>
+            <div class="coin" data-valor="50"><img src="/assets/coins/50.png" alt="coin"></div>
+            <div class="coin" data-valor="25"><img src="/assets/coins/100.png" alt="coin"></div>
+          </div>
+          <button class="button">All in</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
