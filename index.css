@@ -59,6 +59,21 @@
     background: var(--primary);
     /* background: url("https://i.pinimg.com/originals/db/43/e2/db43e2b576e60dba86af4e3ec7f41fc5.gif"); */
 
+    .gameover{
+        position: absolute;
+        background-color: var(--alternative);
+        height: 150px;
+        text-align: center;
+        padding: 20px;
+        margin-top: 29%;
+        margin-left: 32%;
+
+        .btnaftergame{    margin-top: 50px;
+            display: flex;
+            justify-content: space-around;}
+        
+    }
+
     .tableGame {
         height: 86%;
         width: 90%;
@@ -131,6 +146,8 @@
             border-width: 2px;
             margin: 0 auto;
         }
+        
+        
 
         .player {
             .points {
